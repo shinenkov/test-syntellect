@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+}
+.dropdown {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  max-height: 560px;
+  background-color: #383838;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  z-index: 1;
+}
+.country {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.country span {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.country span,
+.country img {
+  cursor: pointer;
+}
+
+.country img {
+  height: 24px;
+  width: 36px;
+}
+
+.country:hover {
+  background-color: #00000033;
+}
+
+@media (prefers-color-scheme: light) {
+  .dropdown {
+    background-color: #eeeeee;
+  }
+  .country span {
+    color: #213547;
+  }
+}
